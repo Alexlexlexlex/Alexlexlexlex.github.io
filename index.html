@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regret</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+    
+</head>
+<body>
+
+    <div id="regret">
+        <p>
+            My only regret is<br>not studying for<br>the history test
+        </p>
+    </div>
+
+    <button id="button" type="button">Easter egg und so</button>
+    <script type="module">
+        import init, {do_something} from './wasm/pkg/wasm.js'
+        await init()
+        document.getElementById('button').addEventListener('click', do_something)
+    </script>
+</body>
+</html>
