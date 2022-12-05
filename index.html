@@ -13,12 +13,7 @@
             My only regret is<br>not studying for<br>the history test
         </p>
     </div>
-
     <button id="button" type="button">Easter egg und so</button>
-    <script type="module">
-        import init, {do_something} from './wasm/pkg/wasm.js'
-        await init()
-        document.getElementById('button').addEventListener('click', do_something)
-    </script>
+    <script type="module" src="./source/js/button.js"></script>
 </body>
 </html>
